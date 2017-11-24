@@ -17,7 +17,7 @@ public class GrayScaleAndSave
             pixel.setGreen(average);
         }
         return outImage ;
-    }
+    }    
 
     public void testImage(){
         ImageResource img = new ImageResource();
