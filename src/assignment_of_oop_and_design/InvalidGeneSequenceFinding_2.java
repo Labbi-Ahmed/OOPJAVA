@@ -9,7 +9,7 @@ public class InvalidGeneSequenceFinding_2 {
         if(startIndex== -1)
             return "";
 
-        int endIndex = dna.indexOf(stopCodon);
+        int endIndex = dna.indexOf(stopCodon , startIndex+3);
 
         if(endIndex == -1)
             return  "";
