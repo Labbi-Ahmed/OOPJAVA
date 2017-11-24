@@ -8,7 +8,7 @@ public class InvalideGeneSequenceFinding {
         if(startIndex== -1)
             return "";
 
-        int endIndex = dna.indexOf("TAA");
+        int endIndex = dna.indexOf("TAA" , startIndex+3);
 
         if(endIndex == -1)
             return  "";
@@ -74,7 +74,7 @@ public class InvalideGeneSequenceFinding {
 
     }
 
-    public static void main(String[] args){    
+    public static void main(String[] args){
         InvalideGeneSequenceFinding ob = new InvalideGeneSequenceFinding();
         ob.testSimpleGene();
     }
