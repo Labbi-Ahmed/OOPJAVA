@@ -74,7 +74,7 @@ public class InvalideGeneSequenceFinding {
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args){    
         InvalideGeneSequenceFinding ob = new InvalideGeneSequenceFinding();
         ob.testSimpleGene();
     }
