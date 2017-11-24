@@ -3,11 +3,10 @@ package hello_around_world;
 import edu.duke.*;
 import java.util.*;
 
-
 public class URLreader {
     public static void urlread(){
         URLResource url = new URLResource("https://www.google.com/");
-        for(String ur : url.words()){
+        for(String ur : url.lines()){
             System.out.println(ur);
         }
     }

@@ -23,12 +23,18 @@ public class GrayConverter {
     }
 
     public  void test(){
+        File f = null ;
 
         DirectoryResource dr = new DirectoryResource();
         for(File file : dr.selectedFiles()){
             ImageResource grayImage = new ImageResource(file);
             ImageResource newgray = grayConverter(grayImage);
-            newgray.draw();
+            String name;
+            name = grayImage.getFileName();
+            newgray.setFileName("Gray_" + name);
+            newgray.save();
+            //newgray.draw();
+
         }
     }
 
