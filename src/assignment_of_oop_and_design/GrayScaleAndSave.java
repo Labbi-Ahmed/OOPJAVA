@@ -22,7 +22,7 @@ public class GrayScaleAndSave
     public void testImage(){
         ImageResource img = new ImageResource();
         ImageResource newImage =grayConvert(img);
-        String gray;   
+        String gray;
         gray = img.getFileName();
         newImage.setFileName("gray_" + gray);
         newImage.draw();
@@ -34,4 +34,4 @@ public class GrayScaleAndSave
         GrayScaleAndSave ob2 =  new GrayScaleAndSave();
         ob2.testImage();
     }
-}
+}         
