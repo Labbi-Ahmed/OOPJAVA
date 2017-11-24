@@ -1,8 +1,8 @@
-package hello_around_wrold;
+package hello_around_world;
 
 import edu.duke.FileResource;
 
-public class HelloAroundWrold {
+public class HelloAroundWorld {
     public  void sayHello(){
         FileResource name = new FileResource();
         for(String f : name.lines()){
@@ -10,7 +10,7 @@ public class HelloAroundWrold {
         }
     }
     public static void  main(String[] arg){
-        HelloAroundWrold ob = new HelloAroundWrold();
+        HelloAroundWorld ob = new HelloAroundWorld();
 
         ob.sayHello();
     }
