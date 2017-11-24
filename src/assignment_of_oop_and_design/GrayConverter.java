@@ -5,10 +5,35 @@ import java.io.*;
 
 public class GrayConverter {
 
-    public ImageResource grayConverter(ImageResource image){
+    public  ImageResource grayConverter(ImageResource image){
 
-        ImageResource newImage = new ImageResource();
+        ImageResource newImage = new ImageResource(image.getWidth() , image.getHeight());
 
-        return  image;
+        for(Pixel pixel : newImage.pixels())
+        {
+            Pixel pix = image.getPixel(pixel.getX(),pixel.getY());
+            int average = (pix.getRed() + pix.getBlue() + pix.getGreen())/3;
+
+            pixel.setRed(average);
+            pixel.setGreen(average);
+            pixel.setBlue(average);
+        }
+
+        return  newImage;
+    }
+
+    public  void test(){
+
+        DirectoryResource dr = new DirectoryResource();
+        for(File file : dr.selectedFiles()){
+            ImageResource grayImage = new ImageResource(file);
+            ImageResource newgray = grayConverter(grayImage);
+            newgray.draw();
+        }
+    }
+
+    public  static  void main(String[] a){
+        GrayConverter ob = new GrayConverter();
+        ob.test();
     }
 }
