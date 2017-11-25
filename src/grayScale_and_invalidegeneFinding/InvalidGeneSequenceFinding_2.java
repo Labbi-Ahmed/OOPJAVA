@@ -1,6 +1,4 @@
-package assignment_of_oop_and_design;
-
-import edu.duke.*;
+package grayScale_and_invalidegeneFinding;
 
 public class InvalidGeneSequenceFinding_2 {
     public String geneFind(String dna , String startCodon , String stopCodon){

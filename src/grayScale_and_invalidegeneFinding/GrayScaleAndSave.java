@@ -1,4 +1,4 @@
-package assignment_of_oop_and_design;
+package grayScale_and_invalidegeneFinding;
 
 import edu.duke.*;
 
@@ -34,4 +34,4 @@ public class GrayScaleAndSave
         GrayScaleAndSave ob2 =  new GrayScaleAndSave();
         ob2.testImage();
     }
-}         
+}

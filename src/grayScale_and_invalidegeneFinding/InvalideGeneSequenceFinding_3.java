@@ -1,7 +1,4 @@
-package assignment_of_oop_and_design;
-
-import java.util.*;
-import edu.duke.*;
+package grayScale_and_invalidegeneFinding;
 
 import java.util.Scanner;
 
