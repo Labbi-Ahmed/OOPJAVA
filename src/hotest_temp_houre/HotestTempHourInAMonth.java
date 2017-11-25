@@ -3,7 +3,7 @@ package hotest_temp_houre;
 import edu.duke.*;
 import org.apache.commons.csv.*;
 
-public class HotestTempInAMonth {
+public class HotestTempHourInAMonth {
 
     public CSVRecord hotestTemp(CSVParser parser){
 
@@ -12,7 +12,7 @@ public class HotestTempInAMonth {
         for(CSVRecord currentRow : parser){
             if (largeSofar == null){
                 largeSofar = currentRow;
-            } 
+            }
             else{
                 double currentTmp = Double.parseDouble(currentRow.get("TemperatureF"));
                 double largestTmp = Double.parseDouble(largeSofar.get("TemperatureF"));
@@ -32,7 +32,7 @@ public class HotestTempInAMonth {
     }
 
     public static void main(String[] args){
-         HotestTempInAMonth ob = new HotestTempInAMonth();
+         HotestTempHourInAMonth ob = new HotestTempHourInAMonth();
          ob.testing();
     }
 }
