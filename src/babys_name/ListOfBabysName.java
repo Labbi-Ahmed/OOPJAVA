@@ -7,9 +7,12 @@ import org.apache.commons.csv.*;
 public class ListOfBabysName {
 
     private void listOfName(CSVParser parser) {
+
         for (CSVRecord r : parser){
-            System.out.println("name " + r.get(0) + " Gender " + r.get(1) + " number of births " + r.get(2));
-        }
+
+            System.out.println("name "+r.get(0) + " Gender " + r.get(1) + " numbers of birth "+ r.get(2));
+
+       }
 
     }
 
